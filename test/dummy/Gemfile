@@ -1,0 +1,15 @@
+source 'http://rubygems.org'
+
+gem 'rails', '3.0.6'
+gem "sqlite3-ruby", :require => "sqlite3"
+gem 'jquery-rails'
+gem 'ruby-debug'
+gem 'async_partial', :path => '../../'
+
+group :test do
+	gem 'rspec-rails'
+  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+	gem 'database_cleaner'
+	gem 'launchy'
+	gem 'factory_girl_rails' 
+end

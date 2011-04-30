@@ -1,0 +1,6 @@
+<%= async_partial :tester %>
+<br/><br/>
+<%= async_partial "tester", :controller => "home", :action => "share", :options => { :additional => "2" } %>
+<br/><br/>
+<%= async_partial "/shared/shared", :controller => "home", :action => "share", :options => { :additional => "add" } %>
+<br/>
