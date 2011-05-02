@@ -1,2 +1,4 @@
-$("#<%= @async_marker %>").after("<%= escape_javascript(render :partial => @path_to_partial, :locals => @locals) %>");
-$("#<%= @async_marker %>").remove();
+(function($) {
+	$("#<%= @async_marker %>").after("<%= escape_javascript(render :partial => @path_to_partial, :locals => @locals) %>");
+	$("#<%= @async_marker %>").remove();
+})(jQuery);

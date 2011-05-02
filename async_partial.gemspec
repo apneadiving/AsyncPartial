@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = AsyncPartial::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Benjamin Roth", "David Ruyer"]
-  s.email       = ["apnea.diving.deep@gmail.com"]
+  s.email       = ["apnea.diving.deep@gmail.com", "david.ruyer@gmail.com"]
   s.homepage    = "https://github.com/apneadiving/AsyncPartial/"
   s.summary     = %q{Async Partial is a helper to insert partials in Rails3 views with Ajax using jQuery.}
   s.description = %q{Async Partial is a helper to insert partials in Rails3 views with Ajax using jQuery. You can even pass variables like a common render :partial, :locals }

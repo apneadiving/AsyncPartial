@@ -1,11 +1,11 @@
 <div id="<%= random %>"></div>
 <% content_for :scripts do -%>
 <script type="text/javascript" charset="utf-8">
-$(function(){	
-  $.ajax({
+(function($) {
+	  $.ajax({
       type: "GET",
       url: "<%= url %>"
       });
-  });
+})(jQuery);
 </script>
 <% end -%>
