@@ -1,10 +1,10 @@
-require 'application_helper'
 require 'base/base'
 
 module AsyncPartial
   class Engine < Rails::Engine
-    initializer 'themes.helper' do |app|
-        ActionView::Base.send :include, AsyncPartialHelper
+    initializer 'async helper' do |app|
+      require 'async_partial_helper'
+      ActionView::Base.send :include, AsyncPartialHelper
     end
   end
 end
